@@ -1,4 +1,4 @@
-import { EventObserverInterface } from "./interfaces/EventObserverInterface";
+import { EventObserverInterface } from "../interfaces/EventObserverInterface";
 
 export default class PushNotifier implements EventObserverInterface {
     public update(): void {

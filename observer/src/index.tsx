@@ -1,5 +1,5 @@
-import EmailNotifier from "./EmailNotifier";
-import PushNotifier from "./PushNotifier";
+import EmailNotifier from "./observers/EmailNotifier";
+import PushNotifier from "./observers/PushNotifier";
 import EventManager from "./managers/EventManager";
 
 const email: EmailNotifier = new EmailNotifier();
