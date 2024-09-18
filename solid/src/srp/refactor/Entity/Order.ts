@@ -1,4 +1,6 @@
-class Order {
+import Item from "./Item";
+
+export default class Order {
     private orderId: number;
     private items: Item[];
 

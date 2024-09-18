@@ -1,12 +1,10 @@
-class CalcularTotalUseCase {
-    private order: Order;
-    constructor(order: Order){
-        this.order = order;
-    }
+import Order from "../Entity/Order";
 
-    public calcularTotal(): number{
+export default class CalcularTotalUseCase {
+
+    public calcularTotal(order: Order): number{
         let total = 0;
-        for (const item of this.order.getItems()) {
+        for (const item of order.getItems()) {
             total += item.price;
         }
         return total;

@@ -1,4 +1,7 @@
-class SaveOrderUseCase {
+import Order from "../Entity/Order";
+import OrderRepository from "../repository/OrderRepository";
+
+export default class SaveOrderUseCase {
     private orderRepository: OrderRepository;
     constructor(){
         this.orderRepository = new OrderRepository();
